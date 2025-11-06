@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://framespik.com
+
+# Sitemaps
+Sitemap: https://framespik.com/sitemap.xml

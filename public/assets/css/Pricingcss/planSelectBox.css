@@ -1,0 +1,167 @@
+/* For tablets and larger mobile devices */
+@media (max-width: 768px) {
+  .UltraPremiumCard {
+    height: 320px !important;
+  }
+
+  .GetStarted {
+    margin-top: 210px !important;
+    font-size: 0.9rem !important;
+    padding: 10px 20px !important;
+  }
+
+  .PriceTag {
+    font-size: 1.7rem !important;
+    margin-left: 3.6rem !important;
+  }
+
+  .PriceTag sup {
+    font-size: 0.7rem !important;
+    vertical-align: 1rem !important;
+  }
+
+  .UltraPremiumHead {
+    width: 145px !important;
+  }
+
+  .WebAppTag {
+    margin-left: 0;
+  }
+
+  .UltraPremiumTags {
+    margin-left: 0 !important;
+    margin-top: -50px !important;
+  }
+
+  .AllFeaturestag {
+    margin: 0;
+    margin-left: 0;
+    margin-bottom: -30px;
+  }
+}
+
+/* For smaller mobile devices */
+@media (max-width: 602px) {
+  .UltraPremiumCard {
+    height: 330px !important;
+  }
+  .PriceTag {
+    font-size: 1.9rem !important;
+  }
+
+  .PriceTag sup {
+    font-size: 0.7rem !important;
+    vertical-align: 1rem !important;
+  }
+
+  .GetStarted {
+    margin-top: 230px !important;
+    font-size: 0.9rem !important;
+    padding: 10px 20px !important;
+    margin-right: 09px !important;
+  }
+  .WebAppTag {
+    margin-left: 0px;
+    margin-top: 100px !important;
+
+  }
+
+  .UltraPremiumTags {
+    margin-left: 0 !important;
+    margin-top: -50px !important;
+  }
+
+  .AllFeaturestag {
+    margin-top: 30px;
+  }
+}
+
+/* For very small mobile devices */
+@media (max-width: 375px) {
+  /* Ensure the card has a height defined */
+  .UltraPremiumCard {
+    height: 330px !important;
+  }
+
+  /* Adjust the UltraPremiumHead width */
+  .UltraPremiumHead {
+    width: 145px !important;
+  }
+
+  /* Adjust the PriceTag font size */
+  .PriceTag {
+    font-size: 0.4rem !important;
+    margin-left: 1rem !important;
+  }
+
+  /* Adjust the font size of the sup tag */
+  .PriceTag sup {
+    font-size: 0.7rem !important;
+    vertical-align: 1rem !important;
+  }
+
+  /* Adjust the GetStarted button */
+  .GetStarted {
+    margin-top: 230px !important;
+    font-size: 0.8rem !important;
+    padding: 10px 10px !important;
+    margin-left: 35px !important;
+  }
+
+  /* Adjust WebAppTag and UltraPremiumTags */
+  .WebAppTag {
+    margin-left: 0px;
+    margin-top: 100px !important;
+  }
+
+  .UltraPremiumTags {
+    margin-left: 0 !important;
+    margin-top: -50px !important;
+  }
+
+  /* Adjust AllFeaturestag */
+  .AllFeaturestag {
+    margin-top: 30px !important;
+  }
+}
+
+@media (max-width: 320px)  {
+  .UltraPremiumCard {
+    height: 330px !important;
+  }
+  .UltraPremiumHead {
+    width: 145px !important;
+  }
+  .PriceTag {
+    font-size: 1rem !important;
+    margin-left: 1rem !important;
+
+  }
+
+  .PriceTag sup {
+    font-size: 0.7rem !important;
+    vertical-align: 1rem !important;
+  }
+
+  .GetStarted {
+    margin-top: 240px !important;
+    font-size: 0.8rem !important;
+    padding: 10px 10px !important;
+    margin-left: 35px !important;
+    
+  }
+  .WebAppTag {
+    margin-left: 0px;
+    margin-top: 100px !important;
+
+  }
+
+  .UltraPremiumTags {
+    margin-left: 0 !important;
+    margin-top: -50px !important;
+  }
+
+  .AllFeaturestag {
+    margin-top: 30px;
+  }
+}

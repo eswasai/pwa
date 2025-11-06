@@ -1,0 +1,70 @@
+.selectAppPlans {
+  width: 100%;
+  height: 69%;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.selectAppPlans .selectPlanTopArea {
+  display: flex;
+  width: 100%;
+  height: 44%;
+  justify-content: space-between;
+}
+
+.selectAppPlans .selectPlanTopArea .selectPlanBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+  height: 100%;
+  justify-content: space-evenly;
+  border: 1px solid #a5a5a8;
+  border-radius: 0.5rem;
+}
+.selectPlanTopArea .selectPlanBox .planSelectionIcon {
+  font-size: 2.1rem;
+  color: #a5a5a8;
+  margin-top: 4%;
+}
+.selectPlanTopArea .selectPlanBox .selectPlanBoxText {
+  font-size: 1.2rem;
+  color: #a5a5a8;
+}
+
+.leftArea .leftAreaTextBox .heading {
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin-bottom: 0%;
+}
+.leftArea .leftAreaTextBox .discription {
+  font-size: 0.8rem;
+  line-height: 1;
+  margin-bottom: 0%;
+  color: #a5a5a8;
+}
+
+
+.selectAppPlans .selectPlanTopArea .isActivated {
+  border-color: #4441cf;
+}
+
+.selectAppPlans .selectPlanTopArea .isActivated .planSelectionIcon {
+  color: #4441cf;
+}
+
+.selectAppPlans .selectPlanTopArea .isActivated .selectPlanBoxText {
+  color: #4441cf;
+}
+
+
+
+@media (max-width:768px){
+    .grabAppCard{
+        height: 550px !important;
+    }
+}
+

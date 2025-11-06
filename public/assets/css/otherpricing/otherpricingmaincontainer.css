@@ -1,0 +1,93 @@
+ /* For screens smaller than 1400px */
+ @media (max-width: 1400px) {
+    .seperateImage {
+      padding-left: 90px;
+      padding-right: 90px;
+    }
+  }
+
+  /* For screens smaller than 1024px (tablets and smaller) */
+  @media (max-width: 1024px) {
+    .seperateImage {
+      padding-left: 65px;
+      padding-right: 65px;
+    }
+  }
+  @media (max-width: 768px) {
+    .seperateImage {
+      padding-left: 0px !important;
+      padding-right: 0px !important;
+    }
+  }
+
+  /* For screens smaller than 768px (phones) */
+  @media (max-width: 769px) {
+    
+    .storageParatag{
+        left: 5% !important;
+        bottom:0% !important;
+    }
+    
+  }
+
+
+  @media (max-width:1200px)  {
+    .dataBackupParatag{
+        top: 7% !important;
+        position:absolute !important;   
+    }
+    .storageParatag{
+        top: 20% !important;
+    }
+    
+  }
+  @media (min-width:1200px) and (max-width:1347px)  {
+    
+    .storageParatag{
+        top: 20% !important;
+    }
+    
+  }
+  @media (max-width:990px)  {
+    .dataBackupParatag{
+        top: 20% !important;
+        position:absolute !important;   
+    }
+    .storageParatag{
+        top: 22% !important;
+    }
+    .seperateImage {
+        padding-left: 85px !important;
+        padding-right: 85px !important;
+      }
+    
+  }
+
+
+  @media (max-width:1360px) {
+    .tenureDropDown{
+        padding: 5px !important;
+        font-size: 0.8rem !important;
+
+    }
+    
+  }
+
+
+  /*DataBAckup Drop Downoad*/
+  @media (max-widht:1400px) and (min-width:991px) {
+    .dataDownloadDropdown{
+        margin-top: 5rem  !important;
+    }
+     
+  }
+  @media (min-width:1024px) and (max-width:1200px)  {
+    .seperateImage {
+      padding-left: 60px !important;
+      padding-right: 60px !important;
+    }
+  
+    
+    
+    
+  }

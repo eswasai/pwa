@@ -1,0 +1,299 @@
+/* payment start */
+
+.paymentContainer {
+  height: 100%;
+  width: 100%;
+  overflow-y: scroll;
+  display: flex;
+  padding: 5% 15% 0%;
+  background-color: rgb(247, 247, 247);
+  display: none;
+}
+
+.paymentContainer > .leftArea {
+  width: 60%;
+  padding: 0% 5%;
+}
+
+.heading {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.description {
+  font-size: 1.3rem;
+  color: var(--color-gray);
+  margin-bottom: 5%;
+}
+
+.summaryArea {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 3%;
+  border: 1px solid #e2e2e2;
+  border-radius: 1rem;
+  background-color: var(--color-white);
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5%;
+}
+
+.planTitle {
+  font-size: 1.7rem;
+}
+
+.planRow .filterBar {
+  width: 20%;
+  display: flex;
+  justify-content: space-between;
+  padding: 1% 3%;
+  align-items: center;
+  border: 1px solid #bfbfbf;
+  border-radius: 0.5rem;
+}
+
+.planRow .filterBar p {
+  font-size: 1.2rem;
+}
+
+.tenureFilterBar {
+  width: 20%;
+  display: flex;
+  justify-content: space-between;
+  padding: 1% 3%;
+  align-items: center;
+  border: 1px solid #bfbfbf;
+  border-radius: 0.5rem;
+  margin-bottom: 2%;
+}
+
+.tenureFilterBar p {
+  font-size: 1.3rem;
+}
+
+.termDescription {
+  font-size: 1.5rem;
+  color: var(--color-gray);
+  margin-bottom: 1%;
+}
+
+.row .value {
+  font-size: 1.4rem;
+}
+
+.strikePrice {
+  font-size: 1.2rem;
+  text-decoration: line-through;
+  color: var(--color-gray);
+  margin-right: 5%;
+}
+
+.row .discount {
+  color: var(--color-gray);
+  font-size: 0.9rem;
+  width: 17%;
+}
+
+.total {
+  font-size: 1.7rem;
+  font-weight: 500;
+}
+
+.total::after {
+  content: "₹";
+  display: inline-block;
+  font-size: 1.1rem;
+  margin-left: 0.5rem;
+  color: var(--color-gray);
+}
+
+.splitPayRow {
+  margin: 3% 0%;
+}
+
+.termDescription input {
+  margin: 0% 3%;
+}
+
+.splitArea {
+  padding: 2% 3%;
+  background-color: var(--color-white);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #dddddd;
+  border-bottom: 0;
+}
+
+.splitArea:last-child {
+  border-bottom: 1px solid #dddddd;
+}
+
+.splitArea .leftArea > p {
+  font-size: 1.5rem;
+}
+
+.splitArea .leftArea > p:first-child {
+  margin-bottom: 2%;
+}
+
+.splitArea .leftArea > p:first-child > span {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: var(--color-primary);
+}
+
+.splitArea .leftArea > p:last-child {
+  font-size: 1.2rem;
+  color: var(--color-gray);
+}
+
+.leftArea .planFeatures {
+  width: 75%;
+  padding: 3%;
+  background-color: #c9cafb;
+  margin-top: 5%;
+  border-radius: 1.6rem;
+  margin-bottom: 5%;
+}
+
+.planFeatures p {
+  font-size: 1.4rem;
+}
+
+.planFeatures span {
+  font-size: inherit;
+  font-weight: 500;
+}
+
+.leftArea .planFeatures .featuresList {
+  width: 100%;
+  background-color: var(--color-white);
+  margin-top: 5%;
+  border-radius: 1.5rem;
+  padding: 5%;
+}
+
+.featuresList p {
+  font-size: 1.4rem;
+  margin-bottom: 0.5rem;
+}
+
+.featuresList p::before {
+  content: "• ";
+  font-size: 1.4rem;
+  margin-right: 0.5rem;
+}
+
+.paymentContainer > .rightArea {
+  width: 40%;
+  height: 79%;
+  position: sticky;
+  top: 0;
+  padding: 4% 2%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--color-white);
+}
+
+.rightArea .heading {
+  font-size: 1.8rem;
+  font-weight: 500;
+  border-bottom: 1px dotted #bfbfbf;
+  width: 100%;
+  padding-bottom: 6%;
+  margin-bottom: 6%;
+}
+
+.rightArea .paymentInfo {
+  width: 100%;
+}
+
+.rightArea .paymentInfo .paymentSubHeading {
+  font-size: 1.5rem;
+}
+.rightArea .paymentInfo .price {
+  font-size: 1.8rem;
+  color: var(--color-blue);
+  font-weight: 600;
+}
+.rightArea .paymentDiscription {
+  font-size: 1.1rem;
+  color: var(--color-dark-gray);
+  text-align: center;
+  margin-top: 6%;
+  width: 70%;
+  line-height: 1.5;
+}
+.rightArea .promoCoupon {
+  font-size: 1.1rem;
+  text-align: center;
+  text-decoration: underline;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+.rightArea .inputArea {
+  font-size: 1.1rem;
+  border: 1px solid #bfbfbf;
+  border-radius: 0.4rem;
+  padding: 2.5% 3%;
+  width: 50%;
+  font-weight: 500;
+  letter-spacing: 1rem;
+  color: var(--color-primary);
+}
+
+.rightArea .inputArea::placeholder {
+  letter-spacing: 0rem;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.rightArea .paymentButton {
+  width: 60%;
+  font-size: 1.3rem;
+  margin-top: 8%;
+  padding: 2.5% 3%;
+  border: none;
+  border-radius: 0.5rem;
+  background-color: var(--color-black);
+  color: var(--color-white);
+  cursor: pointer;
+}
+
+.rightArea .paymentCardsArea {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin-top: 8%;
+}
+.rightArea .paymentCardsArea .securePaymentLock {
+  width: 6%;
+  margin-right: 3%;
+}
+.rightArea .paymentCardsArea .cardsDiscription {
+  font-size: 1.3rem;
+  font-weight: 500;
+  margin-right: 3%;
+}
+.rightArea .paymentCardsArea .creditCards {
+  width: 10%;
+  margin-right: 3%;
+}
+.rightArea .paymentNote {
+  font-size: 1.2rem;
+  text-align: start;
+  margin-top: 6%;
+  color: var(--color-gray);
+  font-weight: 400;
+}
+
+/* payment end */

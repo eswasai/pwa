@@ -1,0 +1,130 @@
+import Image from "next/image";
+import React from "react";
+
+// img import
+import shapes_1 from "@/assets/img/payment/qrcode.png";
+import shapes_2 from "@/assets/img/payment/mobile.png";
+import shapes_3 from "@/assets/img/payment/hand.png";
+import shapes_4 from "@/assets/img/payment/coin-1.png";
+import shapes_5 from "@/assets/img/payment/coin-2.png";
+import shapes_6 from "@/assets/img/payment/payment-3.png";
+import shapes_7 from "@/assets/img/payment/message.png";
+
+const payment_content = {
+  title: <>Experience our powerful payment solutions.</>,
+  sub_title: <>All your payment needs covered.</>,
+  box_1: [
+    {
+      id: 1,
+      col: "md-6",
+      cls: "2 tpfadeLeft",
+      delay: ".3s",
+      title: "Scan & Go",
+      des: (
+        <>
+          Convert your payment link into a QR code that customers make payments
+          effortlessly
+        </>
+      ),
+      shapes: [
+        {
+          id: 1,
+          cls: "4",
+          img: shapes_1,
+        },
+        {
+          id: 2,
+          cls: "5",
+          img: shapes_2,
+        },
+        {
+          id: 3,
+          cls: "6",
+          img: shapes_3,
+        },
+        {
+          id: 4,
+          cls: "7",
+          img: shapes_4,
+        },
+        {
+          id: 5,
+          cls: "8",
+          img: shapes_5,
+        },
+      ],
+    },
+    {
+      id: 2,
+      col: "md-6",
+      cls: "3 tpfadeRight",
+      delay: ".5s",
+      title: "Send Payment Requests via Email or SMS",
+      des: <>Alternatively, Send the details of your account details</>,
+      shapes: [
+        {
+          id: 1,
+          cls: "9",
+          img: shapes_6,
+        },
+        {
+          id: 2,
+          cls: "11",
+          img: shapes_7,
+        },
+      ],
+    },
+  ],
+};
+
+const { title, sub_title, box_1 } = payment_content;
+
+const HeroArea = () => {
+  return (
+    <>
+      <div id="payment-method" className="tp-payment__area pt-110 pb-110">
+        <div className="container">
+          <div className="row justify-content-center">
+            <div className="col-xl-7">
+              <div className="tp-payment__title-box text-center mb-55">
+                <h3 className="tp-section-title-lg">{title}</h3>
+                <p>{sub_title}</p>
+              </div>
+            </div>
+          </div>
+          <div className="row justify-content-center">
+            <div className="col-xl-12">
+              <div className="row">
+                {box_1.map((item, i) => (
+                  <div key={i} className="col-md-6 mb-30">
+                    <div
+                      className={`tp-payment__item tp-payment__bg-color-${item.cls} p-relative z-index wow `}
+                      data-wow-duration=".9s"
+                      data-wow-delay={item.delay}
+                    >
+                      {item.shapes.map((item, i) => (
+                        <div
+                          key={i}
+                          className={`tp-payment__shape-${item.cls}`}
+                        >
+                          <Image src={item.img} alt="theme-pure" />
+                        </div>
+                      ))}
+
+                      <div className="tp-payment__content">
+                        <h3 className="tp-payment__title">{item.title}</h3>
+                        <p> {item.des}</p>
+                      </div>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </>
+  );
+};
+
+export default HeroArea;

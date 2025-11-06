@@ -1,0 +1,86 @@
+.otpPopupmainContainer {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(46, 46, 46, 0.144);
+}
+
+.otpPopContainer .otpPopupImageLogo {
+  width: 30%;
+}
+.otpPopupmainContainer .otpPopContainer {
+  width: 35%;
+  height: 50%;
+  background-color: #fff;
+  border-radius: 1rem;
+  padding: 3% 5%;
+}
+
+.otpPopupmainContainer .otpPopContainer .otpPopupHeading {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #000;
+  text-align: center;
+  margin-bottom: 2%;
+  margin-top: 6%;
+}
+
+.otpPopContainer .otpPopupNumber {
+  font-size: 1rem;
+  text-align: center;
+}
+
+.otpPopContainer .otpPopupNumber {
+  font-size: 1rem;
+  text-align: center;
+}
+.otpPopContainer .otpPopupNumber .otpNumberMask {
+  color: #4441cf;
+}
+
+.otpPopContainer .otpVerifyBox {
+  height: 20%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 10%;
+}
+.otpVerifyBox .otpverificationInputText {
+  color: #000;
+  margin-bottom: 2%;
+  font-weight: 600;
+}
+
+.otpVerifyBox .otpverificationInputBox {
+  width: 100%;
+  border: 1px solid #bfbfbf;
+  padding: 2% 3%;
+  border-radius: 0.3rem;
+}
+
+.otpPopContainer .verificationButtonRow {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 18%;
+  height: 28%;
+}
+.verificationButtonRow .otppopVerificationBtn {
+  width: 100%;
+  padding: 2% 0%;
+  background-color: #fff;
+  /* border: 1px solid #4441cf; */
+  border-radius: 0.2rem;
+  color: #4441cf;
+}
+.verificationButtonRow .verifyBtn {
+  background-color: #4441cf;
+
+  color: #fff;
+}
