@@ -1,32 +1,39 @@
-# Build stage
-FROM node:18-alpine AS build
-
-# Set working directory
+# ===== Stage 1 — Builder =====
+FROM node:18-alpine AS builder
 WORKDIR /app
 
-# Copy package files
+# Install all deps
 COPY package*.json ./
+RUN npm install
 
-# Install dependencies
-RUN npm ci --only=production
-
-# Copy source code
+# Copy source
 COPY . .
 
-# Build the app
+# Build the Next.js project
 RUN npm run build
 
-# Production stage
-FROM nginx:alpine
+# ===== Stage 2 — Dependencies only =====
+FROM node:18-alpine AS deps
+WORKDIR /app
 
-# Copy built app to nginx
-COPY --from=build /app/build /usr/share/nginx/html
+# Install ONLY production deps
+COPY package*.json package-lock.json ./
+RUN npm install --production --omit=dev
 
-# Copy custom nginx config (optional)
-# COPY nginx.conf /etc/nginx/nginx.conf
+# ===== Stage 3 — Runner (Final Image) =====
+FROM node:18-alpine AS runner
+WORKDIR /app
 
-# Expose port
-EXPOSE 80
+ENV NODE_ENV production
 
-# Start nginx
-CMD ["nginx", "-g", "daemon off;"]
+# Copy only needed files
+COPY --from=builder /app/.next ./.next
+COPY --from=builder /app/public ./public
+COPY --from=builder /app/next.config.mjs ./next.config.mjs
+COPY --from=builder /app/package.json ./package.json
+
+# Copy production node_modules only
+COPY --from=deps /app/node_modules ./node_modules
+
+EXPOSE 3000
+CMD ["npm", "start"]
