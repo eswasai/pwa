@@ -13,7 +13,7 @@ import Link from "next/link";
 const hero_content = {
   title_1: (
     <>
-      Empowers <span>Customers</span>
+      Empower <span>Customers</span>
     </>
   ),
   title_2: "Capture Success.",
